@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 
 import readline from 'readline'
-import PeAmountCalculator from './PeAmountCalculator'
+import PeLineAmountCalculator from './PeLineAmountCalculator'
 
 const question = (message: string) => {
   const readlineInterface = readline.createInterface({
@@ -21,7 +21,7 @@ const question = (message: string) => {
   const amount = await question('糸巻量(m): ')
   console.log('')
 
-  const values = new PeAmountCalculator({ peSize, amount }).run()
+  const values = new PeLineAmountCalculator({ peSize, amount }).run()
   values.map((value) => {
     console.log(`${value.peSize}号: ${value.amount}m`)
   })
