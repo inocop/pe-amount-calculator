@@ -5,7 +5,7 @@ type ReferenceValue = {
   amount: number
 }
 
-export default class SpoolAmountCalculator {
+export default class PeAmountCalculator {
   private referenceValue: ReferenceValue
 
   public constructor(referenceValue: ReferenceValue) {
