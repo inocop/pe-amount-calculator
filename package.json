@@ -1,0 +1,41 @@
+{
+  "name": "pe-amount-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "inocof",
+  "license": "MIT",
+  "main": "build/index.js",
+  "files": [
+    "build"
+  ],
+  "bin": {
+    "pe-amount-calculator": "build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inocop/pe-amount-calculator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inocop/pe-amount-calculator/issues"
+  },
+  "homepage": "https://github.com/inocop/pe-amount-calculator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "yarn ts-node ./lib/index",
+    "build": "tsc",
+    "prepare": "yarn build",
+    "lint": "eslint ./lib --ext .ts",
+    "lintfix": "prettier --write ./lib"
+  },
+  "devDependencies": {
+    "@types/node": "^16.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.3.2",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
+}
