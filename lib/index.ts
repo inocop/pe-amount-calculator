@@ -1,5 +1,3 @@
-#! /usr/bin/env node
-
 import readline from 'readline'
 import PeLineAmountCalculator from './PeLineAmountCalculator'
 
@@ -17,8 +15,8 @@ const question = (message: string) => {
 }
 
 ;(async () => {
-  const peSize = await question('号数: ')
-  const amount = await question('糸巻量(m): ')
+  const peSize = await question('> 号数: ')
+  const amount = await question('> 糸巻量(m): ')
   console.log('')
 
   const values = new PeLineAmountCalculator({ peSize, amount }).run()
