@@ -9,6 +9,6 @@ export const Main = () => {
       <FormContextProvider>
         <Template />
       </FormContextProvider>
-   </ChakraProvider>
+    </ChakraProvider>
   )
 }

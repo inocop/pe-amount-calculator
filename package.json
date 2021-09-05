@@ -1,6 +1,6 @@
 {
   "name": "pe-line-amount-calculator",
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "",
   "keywords": [],
   "author": "inocop",
@@ -10,7 +10,7 @@
     "build"
   ],
   "bin": {
-    "pe-amount-calculator": "build/index.js"
+    "pe-line-amount-calculator": "build/index.js"
   },
   "repository": {
     "type": "git",
@@ -25,11 +25,12 @@
     "start": "yarn ts-node ./lib/index",
     "build": "rm -rf ./build/*; tsc",
     "prepare": "yarn build",
-    "lint": "eslint ./lib ./example --ext .ts",
-    "lintfix": "prettier --write ./lib ./example/src/**/*.{ts,tsx}",
-    "web:build": "BUILD_PATH='../docs' yarn --cwd ./example build",
-    "web:start": "yarn --cwd ./example start",
-    "web:test": "yarn --cwd ./example test"
+    "release": "yarn publish --access public",
+    "lint": "eslint ./lib ./app --ext .ts",
+    "lintfix": "prettier --write ./lib ./app/src/**/*.{ts,tsx}",
+    "app:build": "BUILD_PATH='../docs' yarn --cwd ./app build",
+    "app:start": "yarn --cwd ./app start",
+    "app:test": "yarn --cwd ./app test"
   },
   "devDependencies": {
     "@types/node": "^16.7.1",
