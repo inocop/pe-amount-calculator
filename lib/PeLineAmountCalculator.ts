@@ -1,6 +1,6 @@
 import { DENIER_PER_PE_SIZE_1, STANDARD_PE_SIZE_LIST } from './constants/StandardPeLine'
 
-type ReferenceValue = {
+export type ReferenceValue = {
   peSize: number
   amount: number
 }

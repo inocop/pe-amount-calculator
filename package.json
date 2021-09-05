@@ -26,7 +26,7 @@
     "build": "rm -rf ./build/*; tsc",
     "prepare": "yarn build",
     "release": "yarn publish --access public",
-    "lint": "eslint ./lib ./app --ext .ts",
+    "lint": "eslint ./lib ./app --ext ts,tsx",
     "lintfix": "prettier --write ./lib ./app/src/**/*.{ts,tsx}",
     "app:build": "BUILD_PATH='../docs' yarn --cwd ./app build",
     "app:start": "yarn --cwd ./app start",
