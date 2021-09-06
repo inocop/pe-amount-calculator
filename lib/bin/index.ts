@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import readline from 'readline'
-import PeLineAmountCalculator from './PeLineAmountCalculator'
+import PeLineAmountCalculator from '../src/PeLineAmountCalculator'
 
 const question = (message: string) => {
   const readlineInterface = readline.createInterface({

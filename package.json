@@ -1,16 +1,16 @@
 {
   "name": "pe-line-amount-calculator",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "",
   "keywords": [],
   "author": "inocop",
   "license": "MIT",
-  "main": "build/index.js",
+  "main": "build/src/index.js",
   "files": [
     "build"
   ],
   "bin": {
-    "pe-line-amount-calculator": "build/index.js"
+    "pe-line-amount-calculator": "build/bin/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,11 +22,11 @@
   "homepage": "https://github.com/inocop/pe-line-amount-calculator",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "yarn ts-node ./lib/index",
+    "start": "yarn ts-node ./lib/bin/index",
     "build": "rm -rf ./build/*; tsc",
     "prepare": "yarn build",
     "release": "yarn publish --access public",
-    "lint": "eslint ./lib ./app --ext ts,tsx",
+    "lint": "eslint ./lib ./app --ext .ts,.tsx",
     "lintfix": "prettier --write ./lib ./app/src/**/*.{ts,tsx}",
     "app:build": "BUILD_PATH='../docs' yarn --cwd ./app build",
     "app:start": "yarn --cwd ./app start",
