@@ -1,4 +1,4 @@
-import PeLineAmountCalculator, { ReferenceValue } from '../../../../lib/PeLineAmountCalculator'
+import { PeLineAmountCalculator, ReferenceValue } from 'pe-line-amount-calculator'
 
 type Args = {
   peSize?: number
