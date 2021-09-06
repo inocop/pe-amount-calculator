@@ -28,7 +28,7 @@
     "release": "yarn publish --access public",
     "lint": "eslint ./lib ./app --ext .ts,.tsx",
     "lintfix": "prettier --write ./lib ./app/src/**/*.{ts,tsx}",
-    "app:build": "BUILD_PATH='../docs' yarn --cwd ./app build",
+    "app:build": "yarn --cwd ./app build",
     "app:start": "yarn --cwd ./app start",
     "app:test": "yarn --cwd ./app test"
   },
