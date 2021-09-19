@@ -1,24 +1,35 @@
 
 import React from 'react'
-import { Box, Text, Link, VStack, Code, Grid } from '@chakra-ui/react'
-import { ColorModeSwitcher } from '../../shared/components/ColorModeSwitcher'
-import { PeLineList } from './PeLineList'
+import { Stack, Grid, GridItem } from '@chakra-ui/react'
+import { CalculationResultTable } from './CalculationResultTable'
+import { ReferenceValueForm } from './ReferenceValueForm'
+import { Header } from './Header'
 
 export const Template = () => {
   return (
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-          <PeLineList />
-          <Link color="teal.500" href="https://chakra-ui.com" fontSize="2xl" target="_blank" rel="noopener noreferrer">
-            Learn Chakra
-          </Link>
-        </VStack>
-      </Grid>
-    </Box>
+    <Grid
+      minH="100vh"
+      templateRows="72px 1fr"
+      templateColumns={{
+        base: "1fr",
+        md: "1fr 2fr 1fr"
+      }}
+      templateAreas={{
+        base: '"header"\
+               "main"',
+        md: '"header      header header"\
+             "left-space  main   right-space"'
+      }}
+    >
+      <GridItem gridArea="header" margin="4">
+        <Header />
+      </GridItem>
+      <GridItem gridArea="main" margin="4">
+        <Stack spacing={6}>
+          <ReferenceValueForm />
+          <CalculationResultTable />
+        </Stack>
+      </GridItem>
+    </Grid>
   )
 }

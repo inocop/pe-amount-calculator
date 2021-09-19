@@ -1,5 +1,5 @@
 /**
- * JAFTMA 一般社団法人 日本釣用品工業会のPR糸の標準直径を引用
+ * JAFTMA 一般社団法人 日本釣用品工業会のPE糸の太さ標準規格を引用
  * http://www.jaftma.or.jp/standard/
  */
 export const DENIER_PER_PE_SIZE_1 = 200

@@ -1,15 +1,14 @@
 import * as React from 'react'
+import { InputValue } from '../../shared/hooks/usePeLineAmountCalculator'
 
-export type FormState = {
-  peSize?: number
-  amount?: number
+export type State = {
+  formValue: InputValue
 }
 
-export type FormCommand = {
-  setPeSize: (peSize: number) => void
-  setAmount: (amount: number) => void
-  clear: () => void
+export type Command = {
+  saveFormValue: (formValue: InputValue) => void
+  clearFormValue: () => void
 }
 
-export const FormStateContex = React.createContext<FormState>(null as any)
-export const FormCommandContext = React.createContext<FormCommand>(null as any)
+export const FormStateContex = React.createContext<State>(null as any)
+export const FormCommandContext = React.createContext<Command>(null as any)

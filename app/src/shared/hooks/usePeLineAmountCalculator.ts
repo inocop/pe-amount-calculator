@@ -1,11 +1,11 @@
 import { PeLineAmountCalculator, ReferenceValue } from 'pe-line-amount-calculator'
 
-type Args = {
-  peSize?: number
-  amount?: number
+export type InputValue = {
+  peSize: number | ''
+  amount: number | ''
 }
 
-export const usePeLineAmountCalculator = ({ peSize, amount }: Args): ReferenceValue[] => {
+export const usePeLineAmountCalculator = ({ peSize, amount }: InputValue): ReferenceValue[] => {
   if (!peSize || !amount) {
     return []
   }

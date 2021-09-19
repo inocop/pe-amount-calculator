@@ -1,41 +1,34 @@
 import * as React from 'react'
 import produce from 'immer'
-import { FormState, FormCommand, FormStateContex, FormCommandContext } from './FormContext'
+import { State, Command, FormStateContex, FormCommandContext } from './FormContext'
+import { InputValue } from '../../shared/hooks/usePeLineAmountCalculator'
 
 type Action =
-  | { type: 'commitPeSize'; value: number | undefined }
-  | { type: 'commitAmount'; value: number | undefined }
+  | { type: 'commitFormValue'; value: InputValue }
 
-const reducer = produce((state: FormState, action: Action) => {
+const reducer = produce((state: State, action: Action) => {
   switch (action.type) {
-    case 'commitPeSize':
-      state.peSize = action.value
-      break
-    case 'commitAmount':
-      state.amount = action.value
+    case 'commitFormValue':
+      state.formValue = action.value
       break
     default:
       return state
   }
 })
 
-const generateCommand = (dispatch: React.Dispatch<Action>): FormCommand => {
+const generateCommand = (dispatch: React.Dispatch<Action>): Command => {
   return {
-    setPeSize: (peSize) => {
-      dispatch({ type: 'commitPeSize', value: peSize })
+    saveFormValue: (formValue) => {
+      dispatch({ type: 'commitFormValue', value: formValue })
     },
-    setAmount: (amount) => {
-      dispatch({ type: 'commitAmount', value: amount })
-    },
-    clear: () => {
-      dispatch({ type: 'commitPeSize', value: undefined })
-      dispatch({ type: 'commitAmount', value: undefined })
+    clearFormValue: () => {
+      dispatch({ type: 'commitFormValue', value: { peSize: '', amount: '' }})
     }
   }
 }
 
 export const FormContextProvider: React.FC = ({ children }) => {
-  const [state, dispatch] = React.useReducer(reducer, { peSize: 1, amount: 200 })
+  const [state, dispatch] = React.useReducer(reducer, { formValue: { peSize: '', amount: '' } })
   const command = generateCommand(dispatch)
 
   return (
