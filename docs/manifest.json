@@ -22,13 +22,5 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "splash_pages": null,
-  "prefer_related_applications": true,
-  "related_applications": [
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=com.a.construction.keep.display",
-      "id": "com.a.construction.keep.display"
-    }
-  ]
+  "splash_pages": null
 }
