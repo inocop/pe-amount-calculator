@@ -1,5 +1,5 @@
 
-import { Table, TableCaption, Tbody, Td, Th, Thead, Tr, Link, Code } from '@chakra-ui/react'
+import { Table, TableCaption, Tbody, Th, Thead, Tr, Link, Code } from '@chakra-ui/react'
 import React, { useContext } from 'react'
 import { FormStateContex } from '../../contexts/FormContext'
 import { TableItem } from './TableItem'

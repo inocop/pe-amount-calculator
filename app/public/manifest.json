@@ -4,7 +4,7 @@
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "64x64 48x48 32x32 24x24 16x16",
+      "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
     {
@@ -22,5 +22,13 @@
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
-  "splash_pages": null
+  "splash_pages": null,
+  "prefer_related_applications": true,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.a.construction.keep.display",
+      "id": "com.a.construction.keep.display"
+    }
+  ]
 }

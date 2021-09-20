@@ -34,7 +34,7 @@ export const ReferenceValueForm: FC = () => {
           <Input
             name="peSize"
             type="text"
-            inputmode="numeric"
+            inputMode="numeric"
             placeholder="e.g. 0.8"
             value={formValue.peSize}
             onChange={handleOnChange}/>
@@ -45,7 +45,7 @@ export const ReferenceValueForm: FC = () => {
           <Input
             name="amount"
             type="text"
-            inputmode="numeric"
+            inputMode="numeric"
             pattern="\d*"
             placeholder="e.g. 200"
             value={formValue.amount}
