@@ -8855,10 +8855,8 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-pe-line-amount-calculator@^1.0.8:
+pe-line-amount-calculator@../:
   version "1.0.8"
-  resolved "https://registry.yarnpkg.com/pe-line-amount-calculator/-/pe-line-amount-calculator-1.0.8.tgz#c4d102bfd4aa6797ec502370cce819f92baadde6"
-  integrity sha512-BEiy1iQR9w8n/ehvI69bzWYzL4G1reiUNAh+ZgQIYu3fLDwD+FiZnwUFwwsBWwefeOlw/6043p4aczmpMHy6rw==
 
 performance-now@^2.1.0:
   version "2.1.0"
