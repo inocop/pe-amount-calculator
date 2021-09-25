@@ -1,5 +1,5 @@
 
-import { Table, TableCaption, Tbody, Th, Thead, Tr, Link, Code } from '@chakra-ui/react'
+import { Table, TableCaption, Tbody, Th, Thead, Tr, Link, Code, Text } from '@chakra-ui/react'
 import React, { useContext } from 'react'
 import { FormStateContex } from '../../contexts/FormContext'
 import { TableItem } from './TableItem'
@@ -17,7 +17,7 @@ export const CalculationResultTable = () => {
           <Th>号数</Th>
           <Th paddingX={0}>参考強度<br />
             <Link color="teal.400" href="https://fishing.sunline.co.jp/line/184/" target="_blank" rel="noopener noreferrer">
-              ※SUNLINE 商品規格
+              <Text fontSize="x-small">※SUNLINE SIGLON PEx8</Text>
             </Link>
           </Th>
           <Th isNumeric>糸巻量(m)</Th>

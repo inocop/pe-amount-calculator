@@ -14,6 +14,7 @@ const SUNLINE_SIGLON_PE8_DICT: PeLineDictionary = {
   1.2: { lb: 20 },
   1.5: { lb: 25 },
   2: { lb: 35 },
+  2.5: { lb: 40 },
   3: { lb: 50 },
   4: { lb: 60 },
   5: { lb: 80 },
