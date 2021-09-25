@@ -1,4 +1,4 @@
-import { PeLineDictionary } from '../types/PeLine'
+import { PeLineDictionary } from '../types/StandardPeLine'
 
 /**
  * SUNLINE SIGLON PE×8 商品規格より引用
@@ -31,7 +31,7 @@ const SUNLINE_SIGLON_PE8_DICT: PeLineDictionary = {
  * SUNLINE ソルティメイト スモールゲームPE-HG 商品規格より引用
  * https://fishing.sunline.co.jp/line/305/
  */
-const SUNLINE_SALTY_MATE_SMALL_GAME_DICT: PeLineDictionary = {
+const SUNLINE_SALTI_MATE_SMALL_GAME_DICT: PeLineDictionary = {
   0.15: { lb: 2.5 },
   0.2: { lb: 3 },
   0.3: { lb: 5 },
@@ -40,4 +40,4 @@ const SUNLINE_SALTY_MATE_SMALL_GAME_DICT: PeLineDictionary = {
   0.6: { lb: 10 },
 } as const
 
-export const SUNLINE_PE_LINE_DICT = { ...SUNLINE_SALTY_MATE_SMALL_GAME_DICT, ...SUNLINE_SIGLON_PE8_DICT }
+export const SUNLINE_PE_LINE_DICT = { ...SUNLINE_SALTI_MATE_SMALL_GAME_DICT, ...SUNLINE_SIGLON_PE8_DICT }

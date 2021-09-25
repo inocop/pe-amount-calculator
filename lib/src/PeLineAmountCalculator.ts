@@ -1,15 +1,12 @@
-import { DENIER_PER_PE_SIZE_1, STANDARD_PE_SIZE_LIST } from './constants/StandardPeLine'
-import { SUNLINE_PE_LINE_DICT } from './constants/SunlinePeLine'
-import { PeLineSpec } from './types/PeLine'
+import { DENIER_PER_PE_SIZE_1, STANDARD_PE_SIZE_LIST, PeLineSpec } from './types/StandardPeLine'
+import { SUNLINE_PE_LINE_DICT } from './types/SunlinePeLine'
 
 export type InputValue = {
   peSize: number
   amount: number
 }
 
-export type ResultValue = {
-  peSize: number
-  amount: number
+export type ResultValue = InputValue & {
   referenceSpec?: PeLineSpec
 }
 
