@@ -1,3 +1,3 @@
-import PeLineAmountCalculator, { ReferenceValue } from './PeLineAmountCalculator'
+import PeLineAmountCalculator, { InputValue, ResultValue } from './PeLineAmountCalculator'
 
-export { PeLineAmountCalculator, ReferenceValue }
+export { PeLineAmountCalculator, InputValue, ResultValue }
