@@ -15,6 +15,11 @@ export const CalculationResultTable = () => {
       <Thead>
         <Tr>
           <Th>号数</Th>
+          <Th paddingX={0}>参考強度<br />
+            <Link color="teal.400" href="https://fishing.sunline.co.jp/line/184/" target="_blank" rel="noopener noreferrer">
+              ※SUNLINE 商品規格
+            </Link>
+          </Th>
           <Th isNumeric>糸巻量(m)</Th>
         </Tr>
       </Thead>
