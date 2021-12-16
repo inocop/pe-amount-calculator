@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { Stack, Grid, GridItem } from '@chakra-ui/react'
 import { CalculationResultTable } from './CalculationResultTable'
@@ -15,10 +14,14 @@ export const Template = () => {
         md: "1fr 2fr 1fr"
       }}
       templateAreas={{
-        base: '"header"\
-               "main"',
-        md: '"header      header header"\
-             "left-space  main   right-space"'
+        base: `
+          "header"
+          "main"
+        `,
+        md: `
+          "header header header"
+          "left   main   right"
+        `
       }}
     >
       <GridItem gridArea="header" margin="4">
